@@ -9,7 +9,8 @@ I feel that I have achieved it with CR, at least for me.
 
 This is not to say that LBAL is a bad game, just that the game wasn't what I wanted.
 It is meant as a fun slot machine game, and happens to be a Production Engine Builder.
-So I decided to craft one from scratch.
+
+So I decided to craft one(Production Engine Builder) from scratch.
 
 There will be a lot of references to many games including LBAL, Balatro and CR.
 Do not take my analysis of them as a criticism.
@@ -53,7 +54,7 @@ Here is a non-comprehensive list of games in the genre.
 - [Dungeons and Degenerate Gamblers](https://store.steampowered.com/app/2400510/Dungeons__Degenerate_Gamblers/)
 
 LBAL should be the most recent one that started the space.
-If there is a more earlier game, please let me know.
+If there is an earlier game, please let me know.
 
 # Design Thoughts
 Here are some learnings and concepts that I learn from Crop Rotation.
@@ -61,8 +62,6 @@ The sections can be read in any order, and they might reference each other.
 Therefore, I have decided to order them in the order of importance.
 
 ## Building Engine vs Problem Solving
-The first learning is the difference between "Engine Building" versus "Problem Solving".
-
 In the introduction, I mentioned that this is a key difference between Production Engine Builders and Deckbuilders.
 Deckbuilders are a subset of Tactical Engine Builders.
 
@@ -125,7 +124,7 @@ This is why, despite having tactical decisions in Balatro or Farm Keeper, I stil
 This also applies to many of the other games listed above.
 
 In comparison, in a Tactical Engine Builder like Slay the Spire(STS), the enemies you face in a fight changes how you play your hand.
-## Soft Synergy vs Hard Synergy.
+## Soft Synergy vs Hard Synergy
 Crop types were introduced to Crop Rotation very early on in development.
 This idea mainly came from the Autobattlers genre.
 By having crops of the same crop types, they form set bonuses.
@@ -133,14 +132,15 @@ By having crops of the same crop types, they form set bonuses.
 Having set bonuses allows crops to have a soft synergy with other crops that share a type with it.
 Although this was the original intention of adding crop types, having crop types also allows me to have cards interact with crop types instead of specific cards.
 
-For example, if I want a card to interact with all fruits, I do not need to list all the fruits that it interacts with, and instead can just interact with the fruit type.
+For example, if I want a card to interact with all fruits, I do not need to list all the fruits that it interacts with.
+Instead I can just have them interact with the fruit type.
 This is different from LBAL, where interactions are named specifically to the cards that they interact with.
 
 Both CR and LBAL contain a form of soft synergy.
 In CR, cards are connected to multiple cards via types.
 In LBAL, cards are just connected to multiple cards directly.
 
-In my opinion, CR's tag based synergy system is softer than LBAL's, and it allows for banning of cards (more on this later).
+In my opinion, CR's tag based synergy system is softer than LBAL's, and it allows for banning of cards (see [Randomness](#randomness-and-variability) below).
 
 If I am a good article writer, I would put a graphic here.
 But I am not, so imagine CR's graph where cards are connected to types then to cards, and LBAL's graph where symbols are connected to other symbols directly.
@@ -151,7 +151,7 @@ However, such a graph means that if you remove some symbols, a part of the graph
 On the other hand, CR's graph is more boring because everything just connects to crop types.
 Removing cards will not break the graph as long as I ensure that types are never fully removed.
 
-Both have their own pros and cons, but if you want to vary the starting condition of each run(See Variance Section below), a tag based approach like CR will probably be better.
+Both have their own pros and cons, but if you want to vary the starting condition of each run, a tag based approach like CR will probably be better.
 
 In addition to this, adding new cards to CR became easier, since I do not need to update the old cards to name the new cards directly.
 
@@ -192,7 +192,8 @@ Constraints are fun ways to force the player to adapt.
 
 Although I mentioned that the game is about engine building and not problem solving, this does not mean we can't give constraints or problems to the players.
 We can introduce them as part of engine building and they should not be the goal.
-Constraints are there to make the better engine harder to build.
+
+> Constraints are there to make the better engine harder to build.
 
 Let's use CR as an example.
 
@@ -262,8 +263,6 @@ I really like this idea, but it overly complicates the game, and changes how the
 Even though I don't usually plan for my full build at the start of each run, knowing what is available changes what I pick in each draft.
 By adding a fog of war, it makes drafting extremely random at the start, which I didn't like.
 
-I now just lean into the front-loaded planning playstyle by adding a bookmarking quality of life feature.
-
 ## Length of game
 The length of a run often gets ignored when talking about the design and balance of a game.
 This is because it feels like you could cut some games in half and have it still functionally be the same game.
@@ -304,7 +303,7 @@ So the point here is not that a game needs to be short or long, but the length o
 
 In my opinion, this is one of the important things to figure out early on.
 This is also one of the reasons why changing CR to a 4 week game requires a big overhaul instead of just adding a Turbo mode.
-Turbo mode might be one of the worst things I added to the game(I know right ?) and is still in the game right now.
+Turbo mode might be one of the worst things I added to the game and is still in the game right now.
 
 Related to this, this is why adding endless mode is also a bad idea.
 Adding endless mode makes balancing hard because players might want the endless mode to be balanced when it is rarely balanced around it.
@@ -327,15 +326,20 @@ Only in Balatro that the first difficulty is reasonably hard.
 
 People might even ask for an endless mode, which I fundamentally hate and refuse to add to CR till this day.
 I might change my mind (probably not) and add it to CR later.
-To me, this will change a good Production Engine Builder to a bad incremental game.
+However, in my opinion, this will change a good Production Engine Builder to a bad incremental game.
+
+> Adding endless mode to a production engine builder may change it from a good production engine builder to a bad incremental game.
 
 ## Comparing it to Deckbuilder / Tactical Engine Builder
 Many people might play a Production Engine Builder and compare it to Deckbuilders and comment on the lack of tactical decision and problems to solve.
 This is the reason why I decided to write this post in the first place and hopefully people can understand this genre a bit more.
 
+Tactical Engine Builder and Production Engine Builder are similar from the point of engine building.
+However, they also differ in the goals that they give the players.
+
 > Tactical Engine Builder and Production Engine Builder are similar in the way the game is constructed, but different in the way the goals & problems are presented.
 
-We should not ask a Production Engine Builder to have more problems or tactical decisions the same way we should not ask a Tactical Engine Builder to automate their problem solving (aka combats).
+We should not ask a Production Engine Builder to have more problems or tactical decisions and we should not ask a Tactical Engine Builder to automate their problem solving (aka combats).
 
 # Conclusion
 I set out to make CR in a very specific way with a specific vision in mind.

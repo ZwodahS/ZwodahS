@@ -17,4 +17,4 @@ You can find more dev logs in the public repo of the readme but here are some th
 
 ## Crop Rotation
 - Journey of Crop Rotation (Coming Soon)
-- [Analysis of Crop Rotation and Engine Builders](devlog/croprotation/analysis.md)
+- [Analysis of Crop Rotation and Production Engine Builders](devlog/croprotation/production-engine-builder.md)
